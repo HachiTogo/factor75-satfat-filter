@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Factor75 Saturated Fat Filter",
+  "version": "1.0",
+  "description": "Adds a saturated fat filter slider to your Factor75 meal selection page.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://www.factor75.com/store*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
